@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'logo' => '<b>tasya_kasir2</b>LTE',
+    'logo' => '<b>tasya_kasir2</b>',
     'logo_img' => 'vendor/adminlte/dist/assets/img/logoaw.png',
     'logo_img_class' => 'brand-image opacity-75 shadow',
     'logo_img_xl' => null,
@@ -800,27 +800,27 @@ return [
             'icon' => 'bi bi-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'Data Siswa',
                     'url' => '#',
                 ],
                 [
-                    'text' => 'level_one',
+                    'text' => 'Data Siswa',
                     'url' => '#',
                     'submenu' => [
                         [
-                            'text' => 'level_two',
+                            'text' => 'Data Siswa',
                             'url' => '#',
                         ],
                         [
-                            'text' => 'level_two',
+                            'text' => 'Data Siswa',
                             'url' => '#',
                             'submenu' => [
                                 [
-                                    'text' => 'level_three',
+                                    'text' => 'Data Sisa',
                                     'url' => '#',
                                 ],
                                 [
-                                    'text' => 'level_three',
+                                    'text' => 'Data Siswa',
                                     'url' => '#',
                                 ],
                             ],
@@ -828,15 +828,12 @@ return [
                     ],
                 ],
                 [
-                    'text' => 'level_one',
+                    'text' => 'Data Siswa',
                     'url' => '#',
                 ],
             ],
         ],
-        [
-            'text' => 'Data Siswa',
-            'url' => '#',
-        ],
+
     ],
 
     /*
