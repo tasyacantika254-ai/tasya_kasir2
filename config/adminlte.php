@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'logo' => '<b>tasya_kasir2</b>',
+    'logo' => '<b>tasya_kasir2</b>', 
     'logo_img' => 'vendor/adminlte/dist/assets/img/logoaw.png',
     'logo_img_class' => 'brand-image opacity-75 shadow',
     'logo_img_xl' => null,
@@ -802,33 +802,9 @@ return [
                 [
                     'text' => 'Data Siswa',
                     'url' => '#',
-                ],
+                ],    
                 [
-                    'text' => 'Data Siswa',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Data Siswa',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Data Siswa',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Data Sisa',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'Data Siswa',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Data Siswa',
+                    'text' => 'Data Guru',
                     'url' => '#',
                 ],
             ],
