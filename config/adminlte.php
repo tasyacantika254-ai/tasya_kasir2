@@ -804,7 +804,9 @@ return [
                     'url' => '#',
                 ],    
                 [
-                    'text' => 'Data Guru',
+                    'text' => 'Data Guru
+                    
+                    ',
                     'url' => '#',
                 ],
             ],
