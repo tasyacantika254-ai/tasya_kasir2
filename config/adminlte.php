@@ -787,13 +787,13 @@ return [
         ],
         [
             'text' => 'Jurusan',
-            'url' => 'admin/pages',
+            'url' => 'jurusan',
             'icon' => 'far fa-fw fa-file',
             'label_color' => 'success',
         ],
          [
             'text' => 'Jenjang',
-            'url' => 'admin/pages',
+            'url' => 'jenjang',
             'icon' => 'far fa-fw fa-file',
             'label_color' => 'success',
         ],

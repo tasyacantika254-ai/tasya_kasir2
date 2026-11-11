@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\Jurusan;
 use Illuminate\Http\Request;
-
 class JurusanController extends Controller
 {
     /**
@@ -17,16 +16,17 @@ class JurusanController extends Controller
                 $query->where('nama_jurusan', 'like', "%{$search}%")
                       ->orWhere('kode_jurusan', 'like', "%{$search}%");
             })
-            ->paginate(10); 
+            ->paginate(10);
 
         return view('jurusan.index', compact('jurusans'));
     }
-    /**  
+    /**
      * Show the form for creating a new resource.
      */
-    public function create()
+   public function create()
     {
-        //
+             return view('jurusan.create');
+
     }
 
     /**
@@ -34,7 +34,18 @@ class JurusanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validasi sekaligus simpan hasilnya ke variabel $data
+        $data = $request->validate([
+            'nama_jurusan' => 'required|string|max:255',
+            'kode_jurusan' => 'required|string|max:255|unique:jurusans,kode_jurusan',
+            'keterangan' => 'nullable|string|max:255',
+            'status' => 'required|in:aktif,nonaktif',
+        ]);
+
+        // Simpan data langsung (tanpa perlu definisikan satu-satu)
+        Jurusan::create($data);
+
+        return redirect()->route('jurusan.create')->with('success', 'Data jurusan berhasil ditambahkan.');
     }
 
     /**
